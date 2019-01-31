@@ -6,11 +6,11 @@ const router = express.Router();
 
 
 router.get('/issues', (req, res) => {
-    issueService.getIssues(req, res);
+  issueService.getIssues(req, res);
 });
 
 router.post('/issue', (req, res) => {
-    issueService.postIssue(req, res);
+  issueService.postIssue(req, res);
 });
 //
 // router.put('/issue/:id', (req, res) => {

@@ -1,5 +1,5 @@
 require('./mongo').connect();
 
 module.exports = {
-    issueService: require('./issue.service')
+  issueService: require('./issue.service')
 };

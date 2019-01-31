@@ -9,9 +9,7 @@ const apiPrefix = 'api';
   providedIn: 'root'
 })
 export class IssuesService {
-
-  constructor(private httpClient: HttpClient) {
-  }
+  constructor(private httpClient: HttpClient) {}
 
   getAllIssues(): Observable<Issue[]> {
     return this.httpClient.get<Issue[]>(`${apiPrefix}/issues`);

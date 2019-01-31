@@ -74,6 +74,7 @@
     "no-unnecessary-initializer": true,
     "no-unused-expression": true,
     "no-use-before-declare": true,
+    "no-submodule-imports": [true, "rxjs", "@angular/platform-browser", "@angular/core/testing", "@angular/common/http"],
     "no-var-keyword": true,
     "object-literal-sort-keys": false,
     "one-line": [
@@ -127,5 +128,9 @@
     "use-pipe-transform-interface": true,
     "component-class-suffix": true,
     "directive-class-suffix": true
-  }
+  },
+  "extends": [
+    "tslint:latest",
+    "tslint-config-prettier"
+  ]
 }

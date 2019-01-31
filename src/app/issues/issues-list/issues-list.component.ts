@@ -9,14 +9,11 @@ import { IssuesService } from '../../services/issues.service';
   styleUrls: ['./issues-list.component.scss']
 })
 export class IssuesListComponent implements OnInit {
-
   issues$: Observable<Issue[]>;
 
-  constructor(private issuesService: IssuesService) {
-  }
+  constructor(private issuesService: IssuesService) {}
 
   ngOnInit() {
     this.issues$ = this.issuesService.getAllIssues();
   }
-
 }

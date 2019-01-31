@@ -1,7 +1,7 @@
-import {Injectable} from '@angular/core';
-import {HttpClient} from "@angular/common/http";
-import {Observable} from "rxjs";
-import {Issue} from "../models/isssue";
+import { Injectable } from '@angular/core';
+import { HttpClient } from '@angular/common/http';
+import { Observable } from 'rxjs';
+import { Issue } from '../models/isssue';
 
 const apiPrefix = 'api';
 

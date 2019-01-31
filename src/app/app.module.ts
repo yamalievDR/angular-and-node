@@ -3,7 +3,7 @@ import { NgModule } from '@angular/core';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { HttpClientModule } from "@angular/common/http";
+import { HttpClientModule } from '@angular/common/http';
 import { IssuesListComponent } from './issues/issues-list/issues-list.component';
 
 @NgModule({
@@ -19,4 +19,5 @@ import { IssuesListComponent } from './issues/issues-list/issues-list.component'
   providers: [],
   bootstrap: [AppComponent]
 })
-export class AppModule { }
+export class AppModule {
+}

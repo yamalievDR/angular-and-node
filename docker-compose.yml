@@ -1,0 +1,28 @@
+version: '2'
+
+services:
+  angular-and-node:
+    image: yamalievdr/angular-and-node
+    build:
+      context: .
+      dockerfile: Dockerfile
+    environment:
+      - NODE_ENV=development
+    ports:
+      - 3000:3000
+    depends_on:
+      - mongodb
+    networks:
+      - nodeapp-network
+
+  mongodb:
+    container_name: mongodb
+    image: mongo
+    ports:
+      - 27017:27017
+    networks:
+      - nodeapp-network
+
+networks:
+  nodeapp-network:
+    driver: bridge

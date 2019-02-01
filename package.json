@@ -1,16 +1,19 @@
 {
   "name": "angular-and-node",
-  "version": "0.0.0",
+  "version": "1.0.0",
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
     "build": "ng build",
+    "build:prod": "ng build --prod",
     "test": "ng test",
     "lint": "ng lint",
     "e2e": "ng e2e",
     "server": "babel-watch backend/index.js"
   },
   "private": true,
+  "author": "yamalievDR",
+  "license": "ISC",
   "dependencies": {
     "@angular/animations": "^7.2.2",
     "@angular/common": "^7.2.2",

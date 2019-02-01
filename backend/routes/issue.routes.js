@@ -1,9 +1,7 @@
-const express = require('express');
-const services = require('../services');
-const issueService = services.issueService;
-
-const router = express.Router();
-
+const express = require('express'),
+  services = require('../services'),
+  issueService = services.issueService,
+  router = express.Router();
 
 router.get('/issues', (req, res) => {
   issueService.getIssues(req, res);

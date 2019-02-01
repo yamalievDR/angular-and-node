@@ -1,0 +1,9 @@
+{
+  "databaseConfig": {
+    "host": "localhost",
+    "database": "Issue"
+  },
+  "backendConfig": {
+    "port": 3000
+  }
+}

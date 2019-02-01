@@ -1,6 +1,6 @@
-import { Issue } from '../models';
-
-import ReadPreference from 'mongodb';
+const models = require('../models'),
+  Issue = models.Issue,
+  ReadPreference = require('mongodb').ReadPreference;
 
 function getIssues(req, res) {
   const docquery = Issue.find({}).read(ReadPreference.NEAREST);
